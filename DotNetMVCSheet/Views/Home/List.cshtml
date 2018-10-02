@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "List";
+}
+@model List<DotNetMVCSheet.Models.EmpModel>
+
+<h2>List</h2>
+
+<table class="table">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <td>@emp.name</td>
+            <td>@emp.work</td>
+        </tr>
+    }
+</table>
+
